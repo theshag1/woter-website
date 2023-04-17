@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+ <link href="{% static 'homer.css' %}" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" src=""
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+{% for tr in travel %}
+    <div class="card text-bg-dark">
+        <img src="/media/pexels-pixabay-460672.jpg" class="card-img" alt="/media/pexels-pixabay-460672.jpg">
+        <div class="card-img-overlay">
+            <h5 class="card-title black">{{ tr.title }}</h5>
+            <p class="card-text black">{{ tr.deccraption }}</p>
+            <p class="card-text black" ><small>Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+
+
+
+{% endfor %}
+
+</body>
+</html>

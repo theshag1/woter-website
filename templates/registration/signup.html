@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sig nup</title>
+
+</head>
+<body>
+
+<style>
+    body {
+        background-image: url("/media/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+</style>
+<h1 style="color: blueviolet "><a style="font-family: Chilanka">Login</a></h1>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Royxatdan otish</button>
+</form>
+</body>
+</html>

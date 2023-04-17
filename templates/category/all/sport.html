@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for tr in travel %}
+    <div class="card text-bg-dark">
+        <img src="{{ tr.image.url }}" width="400" height="400" class="card-img" alt="">
+        <div class="card-img-overlay">
+            <h5 class="card-title">{{ tr.title }}</h5>
+            <p class="card-text custom-title"> {{ tr.deccraption }}</p>
+            <p class="card-text"> {{ tr.day }} day</p>
+            <p class="card-text"> {{ tr.documents }}</p>
+            <p class="card-text"><small>Last updated this day</small></p>
+        </div>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>
