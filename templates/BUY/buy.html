@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buy</title>
+</head>
+<body>
+{% if user.is_authenticated %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button   type="submit">Save</button>
+</form>
+    {% else %}
+    <h3>Not register !</h3>
+{% endif %}
+
+</body>
+</html>

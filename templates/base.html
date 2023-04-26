@@ -11,71 +11,77 @@
 <body>
 <style>
     body {
+
         background-image: url("../media/pexels-abdullah-aydin-5869122.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
     }
 </style>
+<div style="position:absolute;  right: 0;
+    margin-right: 10px;
+    margin-top: -100px; ">
+    <img class="logo" class="userpic__img js-userpic-img"
+         src="https://uc.chatra-usercontent.com/e2ae9dc1-d76d-462e-8129-7bd6c3c3d9e2/-/resize/200x200/">
+</div>
 
-<img class="btn-logout" class="userpic__img js-userpic-img"
-     src="https://uc.chatra-usercontent.com/e2ae9dc1-d76d-462e-8129-7bd6c3c3d9e2/-/resize/200x200/">
+{% for category in categorys %}
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{ category.Image.url }}" class="img-fluid rounded-start" alt="{{ category.Image.url }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ category.FarmName }}</h5>
+                    <p class="card-text"><small class="text-body-secondary">salom</small></p>
+                    <a href="{% url 'europe' category.id %}">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{% url "asia" %}">Asia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url  "mountain" %}">Mountain</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href=" {% url "europe" %}">Europe</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="{% url "sport" %}" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="False">
-                        Sport
-                    </a>
-                </li>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item custom-title" href="#"></a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item " href="#">Smething else here</a></li>
-                </ul>
-                </li>
 
-                <li>
-                    {% if user.is_authenticated %}
-                        <div class="custom-right">
-                            <button type="button" class="btn btn-primary btn-logout"><a
-                                    href="{% url 'logout' %}" class="custom-title">Logout</a></button>
-                            <button class="btn btn-outline-success" type="submit"
-                                    class="custom-title">{{ user.username }}</button>
-                        </div>
+{% endfor %}
+<div class="btn-logout">
+
+    <div class="card" style="width: 18rem; background: white" >
+        <li>
+            {% if user.is_authenticated %}
+                <div class="card-body">
+                    {% if user.user_image %}
+                        <img class="circular--square" width="100" height="100"
+                             src="{{ user.user_image.url }}"/>
                     {% else %}
-                        <div class="custom-right">
-                            <button type="button" class="btn btn-primary btn-logout"><a href="{% url 'login' %}"
-                                                                                        class="login">Log in</a>
-                            </button>
-                        </div>
-
+                        <img class="circular--square" width="100" height="100"
+                             src="/media/usert.png"/>
 
                     {% endif %}
 
+                    <h5 class="card-title">{{ user.username }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                    <p class="card-text">wotertravel</p>
+                    <button type="button" class="btn btn-primary "><a
+                            href="{% url 'logout' %}" class="custom-title" style="color: white">Logout</a></button>
+                   <a href="{%  url 'change' user.id %}">Edit profile</a>
+                </div>
 
-        </div>
+            {% else %}
+
+                <div class="card-body">
+                    <h5 class="card-title">salom</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                    <p class="card-text" style="font-family: Chilanka">wotertravel</p>
+                    <a href="{% url 'login' %}" style="font-family: Chilanka">Login</a>
+
+                </div>
+            {% endif %}
+        </li>
     </div>
-    </div>
-</nav>
+
+    </li>
+</div>
 {% block content %}
 {% endblock %}
 </body>

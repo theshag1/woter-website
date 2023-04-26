@@ -18,7 +18,7 @@ from pathlib import Path
 import environ
 
 env = environ.Env(
-    DEBUG=(bool , False)
+    DEBUG=(bool, False)
 )
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +28,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, 'woters/.env'))
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  env('SECRETKEY')
+SECRET_KEY = env('SECRETKEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -117,8 +117,6 @@ AUTH_PASSWORD_VALIDATORS = [
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
-
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -127,14 +125,11 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = 'media/'
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
-
 
 
 # Default primary key field type
@@ -149,3 +144,6 @@ if DEBUG:
     ]
 else:
     STATIC_ROOT = 'static'
+
+AUTH_USER_MODEL = 'account.CustomUser'
+

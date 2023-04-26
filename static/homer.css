@@ -3,7 +3,7 @@
 }
 
 .custom-title {
-    color: rgba(2, 1, 1, 0.13);
+    color: rgba(198, 7, 227, 0.8);
 }
 
 .login {
@@ -15,24 +15,30 @@
 }
 
 .float-right {
-    float: right;
+    float: left;
 }
 
 .custom-right {
-    text-align: right;
+    position: center;
 }
 
 .btn-logout {
     position: absolute;
     right: 0;
     margin-right: 10px;
-    margin-top: 0px;
+    margin-top: -580px;
+}
+
+.logo {
+    position: center;
+    margin-right: 100px;
+    margin-top: 50px;
 }
 .btn-skip {
     position: absolute;
     right: 0;
     margin-right: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .circular--square {
@@ -183,22 +189,74 @@ opacity:1;
 
 */
 .left {
-    left : 10px;
+    left: 10px;
 }
 
- .button {
-        background-color: rgba(0, 28, 255, 0.56);
-        border: none;
-        color: white;
-        padding: 10px 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        border-radius: 5px;
-    }
+.button {
+    background-color: rgba(0, 28, 255, 0.56);
+    border: none;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
 
- .black{
-     color: black;
- }
+.black {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: -webkit-linear-gradient(bottom, #340ede, #ff0000);
+    background-repeat: no-repeat;
+}
+
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+}
+
+#forgot-pass {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 3px;
+    text-align: right;
+}
+
+#card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 410px;
+    margin: 6rem auto 8.1rem auto;
+    width: 329px;
+}
+
+#card-content {
+    padding: 12px 44px;
+}
+
+#card-title {
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+#signup {
+    color: #000000;
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+
