@@ -4,57 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f37d3f67-a6ca-4103-a082-6abf00ca53de" name="Changes" comment="woter website">
-      <change afterPath="$PROJECT_DIR$/account/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0002_alter_customuser_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/account/migrations/0003_customuser_user_image_customuser_user_number.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/asia_GT22jWc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/for_europe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/for_river.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/for_sport.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/godrevy-lighthouse-4394664_1920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/godrevy-lighthouse-4394664_1920_YQPPvgd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/pngwing.com.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/india-4051753_1920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/india-4051753_1920_2MS6R9A.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/india-4051753_1920_MZJrwb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/mountains-1587287_1920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/mountains-1587287_1920_6W8JbiX.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/mountains-1587287_1920_KuKQFOr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pexels-pixabay-460672_1_sYBUp2p.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/pexels-symeon-ekizoglou-2105937_QPDc8dv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/sport.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/sport_c7iTFtE.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/sport_dhiXJ2y.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/sport_gne9V7F.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/usert.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/BUY/buy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/category/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/homes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/change.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/salom.html" afterDir="false" />
+    <list default="true" id="f37d3f67-a6ca-4103-a082-6abf00ca53de" name="Changes" comment="wote">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appwoter/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/appwoter/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appwoter/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/appwoter/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appwoter/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/appwoter/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appwoter/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appwoter/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/homer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/homer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/all/asia.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/all/europe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/all/mountain.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/all/rivers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category/all/sport.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/woters/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/woters/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/woters/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/woters/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/enter.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/enter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/change.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/change.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/salom.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/salom.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +79,7 @@
       <recent name="$PROJECT_DIR$/media" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.settings">
+  <component name="RunManager" selected="Python.urls">
     <configuration name="Unnamed" type="DjangoTestsConfigurationType" nameIsGenerated="true">
       <module name="woter-website" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,6 +171,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="urls" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="woter-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/appwoter" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/appwoter/urls.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
       <module name="woter-website" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -249,10 +234,12 @@
       <item itemvalue="JavaScript Debug.Unnamed" />
       <item itemvalue="JavaScript Debug.base.html" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.urls" />
       <item itemvalue="Python.settings" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.urls" />
         <item itemvalue="Python.settings" />
       </list>
     </recent_temporary>
@@ -306,7 +293,14 @@
       <workItem from="1682440780435" duration="1904000" />
       <workItem from="1682486438735" duration="2534000" />
       <workItem from="1682489661568" duration="5873000" />
-      <workItem from="1682498339762" duration="1425000" />
+      <workItem from="1682498339762" duration="2929000" />
+      <workItem from="1682504784445" duration="2625000" />
+      <workItem from="1682508811821" duration="3969000" />
+      <workItem from="1682516518805" duration="41000" />
+      <workItem from="1682517124921" duration="4357000" />
+      <workItem from="1682527077408" duration="2133000" />
+      <workItem from="1682574430232" duration="1822000" />
+      <workItem from="1682576264014" duration="2621000" />
     </task>
     <task id="LOCAL-00001" summary="woter website">
       <created>1681731692471</created>
@@ -322,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681732081382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="woter website">
+      <created>1682501262635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682501262635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,5 +335,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/woter_website$settings.coverage" NAME="settings Coverage Results" MODIFIED="1681732065322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/woters" />
+    <SUITE FILE_PATH="coverage/woter_website$urls.coverage" NAME="urls Coverage Results" MODIFIED="1682511228991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/appwoter" />
   </component>
 </project>

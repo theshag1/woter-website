@@ -213,10 +213,6 @@ a {
     text-decoration: none;
 }
 
-body {
-    background: -webkit-linear-gradient(bottom, #340ede, #ff0000);
-    background-repeat: no-repeat;
-}
 
 label {
     font-family: "Raleway", sans-serif;
@@ -253,10 +249,87 @@ label {
 }
 
 #signup {
-    color: #000000;
+    color: #2b262d;
     font-family: "Raleway", sans-serif;
     font-size: 10pt;
     margin-top: 16px;
     text-align: center;
 }
 
+.navbar {
+  width: 100%;
+  background-color: #efefef;
+  overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #100d0d;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("/media/pexels-abdullah-aydin-5869122.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
+<link href="{% static 'homer.css' %}" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <title>Woter Travel </title>
@@ -8,6 +10,26 @@
 </head>
 
 <body>
+<div style="position:absolute;  right: 0;
+    margin-right: 10px;
+    margin-top: -35px; ">
+    <img class="logo" class="userpic__img js-userpic-img"
+         src="https://uc.chatra-usercontent.com/e2ae9dc1-d76d-462e-8129-7bd6c3c3d9e2/-/resize/200x200/">
+</div>
+<div class="navbar">
+  <a class="active" href="#">Home</a>
+  <a href="{% url 'home' %}">Category</a>
+  <a href="{% url 'about' %}">About</a>
+    {% if user.is_authenticated %}
+        <a href="{% url 'change' user.id %}">{{ user.username }}</a>
+        {% else %}
+  <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+</div>
+
+
+
+
 <style>
     body {
         background-image: url("../media/pexels-asad-photo-maldives-15031960.jpg");
@@ -53,5 +75,8 @@
     {% else %}
     <a href="{% url 'login' %}" class="button " style="font-family: Chilanka">Login</a>
 {% endif %}
+
+
 </body>
 </html>
+

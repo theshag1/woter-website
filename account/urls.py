@@ -7,4 +7,5 @@ urlpatterns = [
     path('buy/<int:pk>', UserBUY.as_view(), name='buy'),
     path('addsuccesfly/', add, name='add'),
 
+
 ]

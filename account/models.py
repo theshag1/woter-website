@@ -27,5 +27,5 @@ class CustomUser(AbstractUser):
         ('M', 'male'),
         ('F', 'famele'),
     ]
-    gander = models.CharField(max_length=1 , choices=ganders , null=True)
-
+    gander = models.CharField(max_length=1, choices=ganders, null=True)
+    REQUIRED_FIELDS = []

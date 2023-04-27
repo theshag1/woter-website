@@ -16,6 +16,7 @@ class Travel(models.Model):
 
 
 class Category(models.Model):
+
     FarmName = models.CharField(max_length=250)
     Image = models.ImageField()
 

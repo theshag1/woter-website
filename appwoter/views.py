@@ -34,8 +34,6 @@ def Categorys(request, pk):
     return render(request, 'category/all.html', context=context)
 
 
-
-
 class Travelview(ListView):
     queryset = Travel.objects.order_by("-id")
     template_name = 'travel/travel.html'
@@ -46,3 +44,7 @@ class Traveldetil(DetailView):
     queryset = Travel.objects.all()
     template_name = 'travel/traveldetil.html'
     context_object_name = 'travel'
+
+
+class AboutView(TemplateView):
+    template_name = 'salom.html'
